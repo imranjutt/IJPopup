@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Vfm-tL-jHx" customClass="IJCustomView" customModule="ObjectiveProjs" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-No-pbP">
+                    <rect key="frame" x="37.5" y="220" width="300" height="160.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9V3-Pb-5Vt">
+                            <rect key="frame" x="0.0" y="0.5" width="300" height="50"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info_popup_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gLx-iI-YCr">
+                                    <rect key="frame" x="12" y="11.5" width="27" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="27" id="Tm2-mf-cgO"/>
+                                        <constraint firstAttribute="height" constant="28" id="oiz-hq-2IA">
+                                            <variation key="heightClass=regular-widthClass=compact" constant="28"/>
+                                        </constraint>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Tm2-mf-cgO"/>
+                                            <exclude reference="oiz-hq-2IA"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="Tm2-mf-cgO"/>
+                                            <include reference="oiz-hq-2IA"/>
+                                        </mask>
+                                    </variation>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert Notification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0I-nI-cOj">
+                                    <rect key="frame" x="45" y="0.5" width="126.5" height="50"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="gLx-iI-YCr" firstAttribute="centerY" secondItem="I0I-nI-cOj" secondAttribute="centerY" id="8yi-Pu-CQ5"/>
+                                <constraint firstAttribute="height" constant="50" id="BIE-5I-m7O"/>
+                                <constraint firstItem="I0I-nI-cOj" firstAttribute="leading" secondItem="gLx-iI-YCr" secondAttribute="trailing" id="DND-NK-Uze">
+                                    <variation key="heightClass=regular-widthClass=compact" constant="6"/>
+                                </constraint>
+                                <constraint firstItem="gLx-iI-YCr" firstAttribute="leading" secondItem="9V3-Pb-5Vt" secondAttribute="leading" constant="16" id="QTz-ot-tuh">
+                                    <variation key="heightClass=regular-widthClass=compact" constant="12"/>
+                                </constraint>
+                                <constraint firstItem="I0I-nI-cOj" firstAttribute="centerY" secondItem="9V3-Pb-5Vt" secondAttribute="centerY" id="RDg-J5-cT6"/>
+                                <constraint firstItem="I0I-nI-cOj" firstAttribute="height" secondItem="9V3-Pb-5Vt" secondAttribute="height" id="Ww9-DW-fGN"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="gLx-iI-YCr"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <exclude reference="BIE-5I-m7O"/>
+                                    <exclude reference="QTz-ot-tuh"/>
+                                    <exclude reference="8yi-Pu-CQ5"/>
+                                    <exclude reference="DND-NK-Uze"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="subviews">
+                                    <include reference="gLx-iI-YCr"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <include reference="BIE-5I-m7O"/>
+                                    <include reference="QTz-ot-tuh"/>
+                                    <include reference="8yi-Pu-CQ5"/>
+                                    <include reference="DND-NK-Uze"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CustomMessage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5w-ZB-AhD">
+                            <rect key="frame" x="22.5" y="65.5" width="255" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3i-vu-Ss1">
+                            <rect key="frame" x="90" y="99.5" width="120" height="42.5"/>
+                            <color key="backgroundColor" red="0.098846130069999996" green="0.73977786300000004" blue="0.28158092499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="U3i-vu-Ss1" firstAttribute="height" secondItem="9V3-Pb-5Vt" secondAttribute="height" multiplier="0.85" id="1cJ-cm-gYx"/>
+                        <constraint firstItem="N5w-ZB-AhD" firstAttribute="width" secondItem="bzs-No-pbP" secondAttribute="width" multiplier="0.85" id="9jA-21-O3Y"/>
+                        <constraint firstItem="9V3-Pb-5Vt" firstAttribute="leading" secondItem="bzs-No-pbP" secondAttribute="leading" id="CSU-0U-kLo"/>
+                        <constraint firstItem="9V3-Pb-5Vt" firstAttribute="width" secondItem="bzs-No-pbP" secondAttribute="width" id="Heb-vY-WK0"/>
+                        <constraint firstItem="N5w-ZB-AhD" firstAttribute="bottom" secondItem="U3i-vu-Ss1" secondAttribute="top" constant="-10" id="JIz-bb-91m">
+                            <variation key="heightClass=regular-widthClass=compact" constant="-15"/>
+                        </constraint>
+                        <constraint firstItem="U3i-vu-Ss1" firstAttribute="centerX" secondItem="bzs-No-pbP" secondAttribute="centerX" id="K6r-aB-N5U"/>
+                        <constraint firstAttribute="bottom" secondItem="U3i-vu-Ss1" secondAttribute="bottom" constant="19" id="KWt-1z-4Qq"/>
+                        <constraint firstItem="N5w-ZB-AhD" firstAttribute="top" secondItem="9V3-Pb-5Vt" secondAttribute="bottom" constant="17" id="TCz-WU-1xp">
+                            <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                        </constraint>
+                        <constraint firstItem="U3i-vu-Ss1" firstAttribute="width" secondItem="bzs-No-pbP" secondAttribute="width" multiplier="0.4" id="hL1-10-X3i"/>
+                        <constraint firstItem="N5w-ZB-AhD" firstAttribute="centerX" secondItem="bzs-No-pbP" secondAttribute="centerX" id="kIa-uo-mzh"/>
+                        <constraint firstItem="9V3-Pb-5Vt" firstAttribute="top" secondItem="bzs-No-pbP" secondAttribute="top" id="wnk-IB-KJa"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="JIz-bb-91m"/>
+                            <exclude reference="kIa-uo-mzh"/>
+                            <exclude reference="1cJ-cm-gYx"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <include reference="kIa-uo-mzh"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="JIz-bb-91m"/>
+                            <include reference="1cJ-cm-gYx"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bzs-No-pbP" firstAttribute="centerY" secondItem="Vfm-tL-jHx" secondAttribute="centerY" multiplier="0.9" id="06G-n2-wgv"/>
+                <constraint firstItem="bzs-No-pbP" firstAttribute="width" secondItem="Vfm-tL-jHx" secondAttribute="width" multiplier="0.8" id="0k5-Yc-BeW"/>
+                <constraint firstItem="bzs-No-pbP" firstAttribute="centerX" secondItem="Vfm-tL-jHx" secondAttribute="centerX" id="O1Z-Gp-fuv"/>
+            </constraints>
+            <connections>
+                <outlet property="messageLabel" destination="N5w-ZB-AhD" id="GQm-6G-dMU"/>
+                <outlet property="okayButton" destination="U3i-vu-Ss1" id="kbf-jO-WC9"/>
+                <outlet property="titleLabel" destination="I0I-nI-cOj" id="LQk-VT-5Cw"/>
+                <outlet property="topBarView" destination="9V3-Pb-5Vt" id="1Hl-ht-dje"/>
+            </connections>
+            <point key="canvasLocation" x="-132" y="82"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="info_popup_icon" width="16" height="16"/>
+    </resources>
+</document>
