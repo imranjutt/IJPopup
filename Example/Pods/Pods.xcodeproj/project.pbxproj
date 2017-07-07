@@ -56,6 +56,7 @@
 		9B284D301F0FA341001F99C2 /* IJAlertPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IJAlertPopup.swift; path = IJPopupView/IJAlertPopup.swift; sourceTree = "<group>"; };
 		9B284D331F0FA3A6001F99C2 /* IJCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IJCustomView.swift; path = IJCustomView/IJCustomView.swift; sourceTree = "<group>"; };
 		9B284D351F0FA3DE001F99C2 /* IJCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IJCustomView.xib; sourceTree = "<group>"; };
+		9B284D381F0FB335001F99C2 /* IJAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IJAssets.xcassets; sourceTree = "<group>"; };
 		9D1CCF0136545A533AEC4168BB2A4A40 /* IJPopup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IJPopup.modulemap; sourceTree = "<group>"; };
 		AC95B43E3AD8BF8F6290EC196964035D /* Pods-IJPopup_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IJPopup_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B0BF47E11A7B616D08F035597902B2AC /* Pods-IJPopup_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IJPopup_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				067F79533C78CE4D1D1AB58426F4336E /* Classes */,
+				9B284D381F0FB335001F99C2 /* IJAssets.xcassets */,
 			);
 			path = IJPopup;
 			sourceTree = "<group>";

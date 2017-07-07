@@ -158,6 +158,6 @@
         </view>
     </objects>
     <resources>
-        <image name="info_popup_icon" width="16" height="16"/>
+        <image name="info_popup_icon" width="27" height="28"/>
     </resources>
 </document>
