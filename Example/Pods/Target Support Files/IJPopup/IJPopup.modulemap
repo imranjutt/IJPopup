@@ -1,0 +1,6 @@
+framework module IJPopup {
+  umbrella header "IJPopup-umbrella.h"
+
+  export *
+  module * { export * }
+}
