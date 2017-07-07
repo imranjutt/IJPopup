@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IJPopup_Example' do
+  pod 'IJPopup', :path => '../'
+
+  target 'IJPopup_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
