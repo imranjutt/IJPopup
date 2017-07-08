@@ -20,6 +20,14 @@ it, simply add the following line to your Podfile:
 pod "IJPopup"
 ```
 
+## Carthage
+
+You can also add the framework via carthage simply add the following line in your Cartfile
+
+```ruby
+github "imranjutt/IJPopup" ~> 0.1.2
+```
+
 ## Author
 
 imranjutt, muhammad.imran.jutt@venturedive.com
