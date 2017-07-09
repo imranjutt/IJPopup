@@ -28,6 +28,17 @@ You can also add the framework via carthage simply add the following line in you
 github "imranjutt/IJPopup" ~> 0.1.2
 ```
 
+## Usage
+
+Usage is incredibly easy all you need to do is call
+
+```ruby
+let popup = IJAlertPopup(withTitle: "Alert", message: "Hey there!!") { (sender) in
+//do anything on callback
+}
+popup.showInView(self.view)
+```
+
 ## Author
 
 imranjutt, muhammad.imran.jutt@venturedive.com
